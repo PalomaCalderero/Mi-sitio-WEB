@@ -1,45 +1,50 @@
 
-/* General Styles */
+/* Estilo general */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #2c3e50;
-    background-color: #f8f9fa;
+    background-color: #fefefe;
+    color: #333;
+    line-height: 1.8;
 }
 
 /* Header */
 header {
-    background-color: #74c69d;
     text-align: center;
-    padding: 2rem 0;
-    color: white;
+    padding: 3rem 1rem;
+    background-color: #e8f5e9;
+    color: #2c3e50;
 }
 
-.header-container h1 {
-    font-size: 2.5rem;
-    margin: 0;
+header h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
 }
 
-.header-container p {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
+header p {
+    font-size: 1.3rem;
 }
 
-/* Services Section */
+/* Secciones */
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 3rem 2rem;
+}
+
+/* Servicios */
 .services {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 2rem;
+    justify-content: space-around;
+    gap: 30px;
 }
 
 .service {
     background: white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 350px;
     text-align: center;
@@ -47,38 +52,41 @@ header {
 
 .service h3 {
     color: #1b4332;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 10px;
 }
 
-/* CTA Section */
-.cta-section {
-    text-align: center;
-    background-color: #52b788;
-    padding: 3rem 1rem;
-    margin-top: 2rem;
-    color: white;
-}
-
-.cta-container {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
+/* Botones */
 .cta-btn {
     display: inline-block;
-    background: linear-gradient(135deg, #40916c, #74c69d);
+    background: linear-gradient(135deg, #74c69d, #52b788);
     color: white;
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 12px 25px;
     border-radius: 50px;
     font-size: 1.2rem;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
-    margin: 10px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    width: fit-content;
 }
 
 .cta-btn:hover {
     background: linear-gradient(135deg, #2d6a4f, #40916c);
     transform: scale(1.05);
+}
+
+/* Sección de contacto */
+.contact {
+    background-color: #e8f5e9;
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #2c3e50;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
